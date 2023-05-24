@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Lista de Tareas</h2>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let task of tasks">{{ task }}</li>
+  </ul>
+
+  <div class="form-group mt-3">
+    <input class="form-control" [(ngModel)]="newTask" placeholder="Nueva tarea">
+    <button class="btn btn-primary mt-2" (click)="addTask()">Agregar tarea</button>
+  </div>
+</div>
